@@ -33,8 +33,8 @@ def Main(Array):
                         if User_Menu_Input == "yes":
                             Main(Array)
                         elif User_Menu_Input == "no":
-                         print("Thank you for using List Modifier program.")
-                        break
+                            print("Thank you for using List Modifier program.")
+                            break
                     else:
                         print("error")
                         break
