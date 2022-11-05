@@ -34,13 +34,19 @@ def Main():
                 print(Array_counter)                
         if Users_num_input == 4:
                 print("You chose the Delete an element option")
-                user_add=int(input("Add an element to the list: "))
+                user_delete=int(input("Pick an element to be deleted from the list: "))
+                Array.remove(user_delete)
+                print(Array)
         if Users_num_input == 5:
                 print("You chose the Arrange in ascending order option")
-                user_add=int(input("Add an element to the list: "))
+                input("Enter any key to arrange the elements in ascending order ")
+                Array.sort()
+                print(Array)
         if Users_num_input == 6:
-                print("You chose Arrange in descending order option")
-                user_add=int(input("Add an element to the list: "))
+                print("You chose the Arrange in descending order option")
+                input("Enter any key to arrange the elements in descending order ")
+                Array.sort(reverse=True)
+                print(Array)
         return 
     return Menu_Intro(Array), User_Input(Array)
 
