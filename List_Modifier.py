@@ -15,9 +15,23 @@ def Main():
         return 
 
     def User_Input(Array):
-        Users_num_input=input("What do you want to do? (1-6): ")
-        return Users_num_input
-
+        Users_num_input=int(input("What do you want to do? (1-6): "))
+        if Users_num_input == 1:
+                print("You chose the Add an element option")
+                user_add=int(input("Add an element to the list: "))
+                Array.append(user_add)
+                print(Array)
+        if Users_num_input == 2:
+                print("You chose 2")
+        if Users_num_input == 3:
+                print("You chose 3")
+        if Users_num_input == 4:
+                print("You chose 4")
+        if Users_num_input == 5:
+                print("You chose 5")
+        if Users_num_input == 6:
+                print("You chose 6")
+        return 
     return Menu_Intro(Array), User_Input(Array)
 
 
